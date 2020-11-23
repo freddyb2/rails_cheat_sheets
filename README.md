@@ -1,4 +1,4 @@
-# rails_useful_commands
+# Rails useful commands
 
 ## Create a model
 
