@@ -1,5 +1,13 @@
 ## Rails useful commands
 
+### Solve gem issues
+
+```
+rvm gemset empty
+gem install bundler
+bundle install
+```
+
 ### Create a model
 
 ```sh
