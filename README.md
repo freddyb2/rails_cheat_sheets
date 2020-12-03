@@ -2,7 +2,18 @@
 
 ### Solve gem issues
 
+Check brew:
 ```
+brew cleanup
+brew update-reset
+brew doctor
+```
+
+With gemset:
+```
+rm -rf /Users/<user>/.gem
+rm -rf /usr/local/Homebrew/Library/Homebrew/vendor/bundle/ruby/2.6.0/gems/*
+
 rvm gemset empty
 gem install bundler
 bundle install
