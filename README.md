@@ -51,3 +51,13 @@ class CreatePosts < ActiveRecord::Migration[5.0]
   end 
 end
 ```
+
+### Resolve conflits on `db/structure.sql`
+
+```sh
+git checkout $(git merge-base origin/master HEAD) -- db/structure.sql
+bundle exec rails db:drop db:create db:structure:load db:migrate db:seed
+git add db/structure.sql
+git commit -m "resolve conflicts with db/structure.sql"
+git push
+```
